@@ -8,8 +8,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Task Manager",
-  description: "A simple task manager that stores your tasks in localStorage.",
+  title: "Recurring Payroll",
+  description:
+    "Owner-managed recurring ETH payments for employees and freelancers.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

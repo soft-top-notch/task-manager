@@ -1,14 +1,19 @@
 {
-  "name": "task-manager",
+  "name": "recurring-payroll",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node scripts/compile.js && node --test test/RecurringPayroll.test.js",
+    "compile": "node scripts/compile.js",
+    "node": "node scripts/node.js",
+    "deploy:local": "node scripts/deploy.js"
   },
   "dependencies": {
+    "ethers": "^6.15.0",
     "next": "16.3.4",
     "react": "19.2.8",
     "react-dom": "19.2.8"
@@ -20,6 +25,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "ganache": "^7.9.2",
+    "solc": "^0.8.24",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

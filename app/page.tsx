@@ -1,9 +1,9 @@
-import { TaskApp } from "@/components/task-app";
+import { PayrollApp } from "@/components/payroll-app";
 
 export default function Home() {
   return (
     <main className="flex-1">
-      <TaskApp />
+      <PayrollApp />
     </main>
   );
 }
